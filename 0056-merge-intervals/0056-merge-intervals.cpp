@@ -34,7 +34,6 @@ public:
         }
         
         int ss = s.size();
-        cout<<ss<<endl;
         
         while(ss--){
             auto pp = s.top();
