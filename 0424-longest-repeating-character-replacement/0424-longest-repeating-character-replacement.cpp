@@ -1,6 +1,9 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
+        
+        ///sliding window - keep window - keep max freq char and if > k then slide else keep max count
+        
         if(s.size() == 0){
             return 0;
         }
