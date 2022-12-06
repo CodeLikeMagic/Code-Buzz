@@ -9,7 +9,6 @@
 
 -- @lc code=end
 select user_id , 
-concat(upper(substr(name,1,1)),lower(substr(name,2,50))
-as name
-from users
-ordere by user_id
+concat(upper(substr(name,1,1)),lower(substr(name,2,50))) as name
+from Users
+order by user_id
