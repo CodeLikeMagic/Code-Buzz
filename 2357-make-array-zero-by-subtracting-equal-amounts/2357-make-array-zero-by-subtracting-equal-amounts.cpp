@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minimumOperations(vector<int>& nums) {
-        priority_queue<int, vector<int>, greater<int>> pq;  //int
+        priority_queue<int, vector<int>, greater<int>> pq;  //min heap
         vector<int> temp;
         
         int k, steps = 0;
