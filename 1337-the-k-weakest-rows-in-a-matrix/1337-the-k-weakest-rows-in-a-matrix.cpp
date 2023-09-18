@@ -10,7 +10,6 @@ public:
         int i = 0, l=-1;
         for(int i=0; i<n; i++){
             l = count(mat[i].begin(), mat[i].end(), 1);
-            cout<<l<<endl;
             pq.push({l, i});
         }
         
