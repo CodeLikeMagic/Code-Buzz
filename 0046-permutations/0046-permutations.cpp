@@ -6,19 +6,19 @@ public:
             result.push_back(nums);
         }
         
-        unordered_set<char> mp;
+        //unordered_set<char> mp;
         
         for(int i=start; i<nums.size(); i++){
             
-            if(mp.find(nums[i]) == mp.end()){
-                mp.insert(nums[i]); //keep distinct 
+           // if(mp.find(nums[i]) == mp.end()){
+             //   mp.insert(nums[i]); //keep distinct 
                 
                 swap(nums[start], nums[i]); //make changes
                 
                 solve(nums, start+1, result);   //rc
                 
                 swap(nums[start], nums[i]); //backtrack
-            }           
+            //}           
         }
     }
     
