@@ -8,8 +8,6 @@ class Solution:
             total = mid//a + mid//b + mid//c - mid//ab - mid//ac - mid//bc + mid//abc
             return total >= n
         
-        
-        
         left = 1
         right = 10**10
         while left < right:
