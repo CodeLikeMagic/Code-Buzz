@@ -16,8 +16,6 @@ class Solution:
             
         potions.sort()
         n = len(potions)
-        m = len(spells)
-
         ans = []
         for i in range(len(spells)):
             res = binarySearch(potions, success, spells[i])
